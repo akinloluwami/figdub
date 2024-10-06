@@ -9,5 +9,10 @@
       "js": ["src/content.tsx"]
     }
   ],
-  "permissions": ["clipboardWrite"]
+  "permissions": ["clipboardWrite"],
+  "icons": {
+    "128": "src/icons/128.png",
+    "48": "src/icons/48.png",
+    "16": "src/icons/16.png"
+  }
 }
