@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-rich-colors="true"][data-sonner-toast][data-type="success"],
+[data-rich-colors="true"][data-sonner-toast][data-type="success"]
+  [data-close-button] {
+  padding: 15px;
+}
+
+[data-rich-colors="true"][data-sonner-toast][data-type="error"],
+[data-rich-colors="true"][data-sonner-toast][data-type="error"]
+  [data-close-button] {
+  padding: 15px;
+}

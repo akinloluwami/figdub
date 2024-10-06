@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "FigDub",
+  "version": "1.0.0",
+  "action": { "default_popup": "index.html" },
+  "content_scripts": [
+    {
+      "matches": ["https://*.figma.com/*"],
+      "js": ["src/content.tsx"]
+    }
+  ],
+  "permissions": ["clipboardWrite"]
+}
