@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
   "name": "FigDub",
+  "description": "Generate short links for Figma files",
   "version": "1.0.0",
   "action": { "default_popup": "index.html" },
   "content_scripts": [
