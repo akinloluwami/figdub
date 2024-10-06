@@ -1,8 +1,8 @@
 ### FIGDUB
 
-A simple way to generate short links for Figma files. Powered by [Dub](https://dub.co/).
+A simple Chrome extension for generating short links for Figma files. Powered by [Dub](https://dub.co/).
 
-** HOw TO INSTALL **
+**HOW TO INSTALL**
 
 - Clone the repo.
 - Find the zip file and extract it.
