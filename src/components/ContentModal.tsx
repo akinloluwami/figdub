@@ -34,6 +34,13 @@ const ContentModal = () => {
       if (res.ok) {
         const data = await res.json();
         const shortLink = data.shortLink;
+
+        chrome.storage.local.get("shortLinks", (result) => {
+          const storedLinks = result.shortLinks || [];
+          storedLinks.push(shortLink);
+          chrome.storage.local.set({ shortLinks: storedLinks });
+        });
+
         toast.success("Short link copied to clipboard");
         await navigator.clipboard.writeText(shortLink);
         setIsOpen(false);
@@ -58,7 +65,6 @@ const ContentModal = () => {
       if (figDubBubButton) return;
 
       if (toolbar) {
-        console.log("FIGDUB");
         const button = document.createElement("button");
 
         button.classList.add(
@@ -82,8 +88,6 @@ const ContentModal = () => {
 
         toolbar.appendChild(button);
         observer.disconnect();
-      } else {
-        console.log("FIGDUB NOT FOUND");
       }
     });
 
